@@ -6,11 +6,6 @@ import (
 	"os"
 	"sort"
 	"strconv"
-	// "fmt"
-	// "io"
-	// "os"
-	// "path/filepath"
-	// "strings"
 )
 
 func readDirNames(path string, printFiles bool) ([]os.FileInfo, error) {

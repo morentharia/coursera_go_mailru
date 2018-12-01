@@ -27,16 +27,10 @@ type User struct {
 
 // вам надо написать более быструю оптимальную этой функции
 func FastSearch(out io.Writer) {
-	file, err := os.Open(filePath)
-	if err != nil {
-		panic(err)
-	}
-
-	// r := regexp.MustCompile("@")
 	seen := make(map[string]bool, 20)
 	foundUsers := ""
 
-	file, err = os.Open(filePath)
+	file, err := os.Open(filePath)
 	if err != nil {
 		panic(err)
 	}
